@@ -16,8 +16,8 @@ object ViewModel {
     def id: String = s"gbfrf-dialog__$label"
   }
   object DialogTab {
-    case object Follow extends DialogTab("Follow", "add")
-    case object Settings extends DialogTab("Settings", "settings")
+    case object Follow extends DialogTab("关注", "add")
+    case object Settings extends DialogTab("设置", "settings")
 
     val all: List[DialogTab] = List(Follow, Settings)
     val fromString: String => Option[DialogTab] =
@@ -28,9 +28,9 @@ object ViewModel {
     def id: String = s"gbfrf-settings__image-quality--$label"
   }
   object ImageQuality {
-    case object Off extends ImageQuality("Off", "")
-    case object Low extends ImageQuality("Low", ":thumb")
-    case object High extends ImageQuality("High", ":small")
+    case object Off extends ImageQuality("关", "")
+    case object Low extends ImageQuality("低", ":thumb")
+    case object High extends ImageQuality("高", ":small")
 
     val Default = Off
     val all = List(Off, Low, High)
@@ -42,9 +42,9 @@ object ViewModel {
     def id: String = s"gbfrf-settings__time-format--$label"
   }
   object TimeFormat {
-    case object Relative extends TimeFormat("Relative")
-    case object TwelveHour extends TimeFormat("12H")
-    case object TwentyFourHour extends TimeFormat("24H")
+    case object Relative extends TimeFormat("相对")
+    case object TwelveHour extends TimeFormat("12h")
+    case object TwentyFourHour extends TimeFormat("24h")
 
     val Default = Relative
     val all: List[TimeFormat] = List(Relative, TwelveHour, TwentyFourHour)

@@ -69,12 +69,12 @@ object MainDialog {
     reloadBosses: Event => Unit
   ): Binding[HTMLDivElement] = {
     <div class="mdl-dialog__actions">
-      <button type="button" class="mdl-button gbfrf-dialog__button" onclick={ closeModal }>Close</button>
+      <button type="button" class="mdl-button gbfrf-dialog__button" onclick={ closeModal }>关闭</button>
       <button type="button" class={
         "gbfrf-dialog__button mdl-button".addIf(currentTab.bind != DialogTab.Follow, "is-hidden")
       } onclick={ reloadBosses }>
         <i class="material-icons">refresh</i>
-        Reload Bosses
+        重载BOSS列表
       </button>
     </div>
   }

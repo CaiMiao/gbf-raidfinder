@@ -26,17 +26,17 @@ object SettingsMenu {
       <div class="gbfrf-settings__content">
         <ul class="mdl-list" style="padding: 0; margin: 0;">
           {
-            settingsListItem("Time format") {
+            settingsListItem("时间格式") {
               radioSelector(TimeFormat.all, viewState.timeFormat, onChange)
             }.bind
           }
           {
-            settingsListItem("Boss image quality") {
+            settingsListItem("BOSS头图质量") {
               radioSelector(ImageQuality.all, viewState.imageQuality, onChange)
             }.bind
           }
           {
-            settingsListItem("Column width") {
+            settingsListItem("每栏宽度") {
               slider(
                 id = "gbfrf-setting__column-width",
                 min = 0.0, max = 1.0, step = 0.1,
@@ -45,12 +45,12 @@ object SettingsMenu {
             }.bind
           }
           {
-            settingsListItem("Show user images") {
+            settingsListItem("显示用户推特头像") {
               checkboxAction("gbfrf-setting__user-image", viewState.showUserImages, onChange)
             }.bind
           }
           {
-            settingsListItem("Night mode") {
+            settingsListItem("夜间模式") {
               checkboxAction("gbfrf-setting__night-mode", viewState.nightMode, onChange)
             }.bind
           }
