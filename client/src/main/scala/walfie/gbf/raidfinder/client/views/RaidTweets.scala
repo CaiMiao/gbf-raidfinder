@@ -160,7 +160,7 @@ object RaidTweets {
     val bossName = Binding(raidBoss.bind.name)
 
     val headerRow =
-      <div class="mdl-layout__header-row gbfrf-column__header-row">
+      <div lang="ja" class="mdl-layout__header-row gbfrf-column__header-row">
         <div class="mdl-layout-title gbfrf-column__header">
           <div class="gbfrf-column__header-name">{ bossName.bind }</div>
           {
@@ -196,17 +196,17 @@ object RaidTweets {
     client:          RaidFinderClient
   ): Binding[HTMLUListElement] = {
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" data:for={ menuId(bossName) }>
-      { menuItem("Move Left", "keyboard_arrow_left", _ => client.move(bossName, -1)).bind }
-      { menuItem("Move Right", "keyboard_arrow_right", _ => client.move(bossName, 1)).bind }
-      { menuItem("Clear", "clear_all", _ => client.clear(bossName)).bind }
-      { menuItem("Unfollow", "delete", _ => client.unfollow(bossName)).bind }
+      { menuItem("左移", "keyboard_arrow_left", _ => client.move(bossName, -1)).bind }
+      { menuItem("右移", "keyboard_arrow_right", _ => client.move(bossName, 1)).bind }
+      { menuItem("清除", "clear_all", _ => client.clear(bossName)).bind }
+      { menuItem("取消关注", "delete", _ => client.unfollow(bossName)).bind }
       {
         val (text, icon) =
-          if (isSubscribed.bind) ("Unsubscribe", "notifications_off")
-          else ("Subscribe", "notifications_on")
+          if (isSubscribed.bind) ("关闭通知", "notifications_off")
+          else ("打开通知", "notifications_on")
         menuItem(text, icon, _ => client.toggleSubscribe(bossName)).bind
       }
-      { menuItem("Sound", "music_note", _ => onSoundMenuOpen(bossName)).bind }
+      { menuItem("声音", "music_note", _ => onSoundMenuOpen(bossName)).bind }
     </ul>
   }
 

@@ -116,10 +116,10 @@ object SoundSelectionDialog {
   def header(title: String, close: Event => Unit): Binding[HTMLElement] = {
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row gbfrf-column__header-row">
-        <span class="mdl-layout-title">Notification Sound</span>
+        <span class="mdl-layout-title">通知声音</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-button mdl-js-button mdl-button--icon material-icons js-close-dialog" onclick={ close }>
-          <i class="material-icons">clear</i>
+          <i class="material-icons">清除</i>
         </div>
       </div>
     </header>
@@ -128,8 +128,8 @@ object SoundSelectionDialog {
   @binding.dom
   def footer(onSave: Event => Unit, onCancel: Event => Unit): Binding[HTMLElement] = {
     <div class="mdl-dialog__actions">
-      <button type="button" class="mdl-button mdl-button--primary gbfrf-dialog__button" onclick={ onSave }>Save</button>
-      <button type="button" class="mdl-button gbfrf-dialog__button" onclick={ onCancel }>Cancel</button>
+      <button type="button" class="mdl-button mdl-button--primary gbfrf-dialog__button" onclick={ onSave }>保存</button>
+      <button type="button" class="mdl-button gbfrf-dialog__button" onclick={ onCancel }>取消</button>
     </div>
   }
 }
