@@ -16,24 +16,25 @@ package time {
   }
 }
 
+
 package object time {
   val MomentShortLocale: js.Dictionary[js.Any] = js.Dictionary(
-    "parentLocale" -> "en",
+    "parentLocale" -> "en", // unknown to be safe edit or not
     "relativeTime" -> js.Dictionary(
-      "future" -> "in %s",
-      "past" -> "%s ago",
-      "s" -> "now",
+      "future" -> "%s 后",
+      "past" -> "%s 前",
+      "s" -> "现在",
       "ss" -> "%ss",
-      "m" -> "1m",
-      "mm" -> "%dm",
-      "h" -> "1h",
-      "hh" -> "%dh",
-      "d" -> "1d",
-      "dd" -> "%dd",
-      "M" -> "1M",
-      "MM" -> "%dM",
-      "y" -> "1Y",
-      "yy" -> "%dY"
+      "m" -> "1分钟",
+      "mm" -> "%d分钟",
+      "h" -> "1小时",
+      "hh" -> "%d小时",
+      "d" -> "1天",
+      "dd" -> "%d天",
+      "M" -> "1月",
+      "MM" -> "%d月",
+      "y" -> "1年",
+      "yy" -> "%d年"
     )
   )
 }

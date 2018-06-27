@@ -119,7 +119,7 @@ object SoundSelectionDialog {
         <span class="mdl-layout-title">通知声音</span>
         <div class="mdl-layout-spacer"></div>
         <div class="mdl-button mdl-js-button mdl-button--icon material-icons js-close-dialog" onclick={ close }>
-          <i class="material-icons">清除</i>
+          <i class="material-icons">clear</i>
         </div>
       </div>
     </header>

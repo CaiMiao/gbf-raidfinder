@@ -31,8 +31,8 @@ object RaidTweets {
         {
           <div class="gbfrf-column__notification-banner mdl-shadow--4dp">
             <div class="gbfrf-column__notification-banner-container">
-              { notificationBannerItem("Sound on", "volume_up", Binding(column.notificationSound.bind.nonEmpty)).bind }
-              { notificationBannerItem("Notifications on", "notifications", column.isSubscribed).bind }
+              { notificationBannerItem("声音：开", "volume_up", Binding(column.notificationSound.bind.nonEmpty)).bind }
+              { notificationBannerItem("通知：开", "notifications", column.isSubscribed).bind }
             </div>
           </div>
         }
@@ -82,7 +82,7 @@ object RaidTweets {
       } yield {
         if (HtmlHelpers.copy(raidId)) {
           element.classList.toggle("gbfrf-tweet--copied")
-          notification.enqueue(s"$raidId copied to clipboard")
+          notification.enqueue(s"$raidId 已复制到剪贴板")
         }
       }
     })
@@ -160,8 +160,8 @@ object RaidTweets {
     val bossName = Binding(raidBoss.bind.name)
 
     val headerRow =
-      <div lang="ja" class="mdl-layout__header-row gbfrf-column__header-row">
-        <div class="mdl-layout-title gbfrf-column__header">
+      <div class="mdl-layout__header-row gbfrf-column__header-row">
+        <div lang="ja" class="mdl-layout-title gbfrf-column__header">
           <div class="gbfrf-column__header-name">{ bossName.bind }</div>
           {
             raidBoss.bind.translatedName match {
