@@ -67,7 +67,7 @@ object SettingsMenu {
 
     // TODO: Don't hardcode this
     val githubBaseUrl = "https://github.com/walfie/gbf-raidfinder"
-    val forkGitBaseUrl = "https://github.com/CaiMiao/gbf-raidfinder"
+    val forkGitBaseUrl = "https://github.com/CaiMiao/gbf-raidfinder/schinese"
 
     def linkOut() = Binding(<i class="gbfrf-linkout material-icons">open_in_new</i>)
 
@@ -95,7 +95,7 @@ object SettingsMenu {
           </li>
           <li>
             <a href={ forkGitBaseUrl } target="_blank">
-              中文分支维护：github.com/CaiMiao/gbf-raidfinder
+              中文分支维护：CaiMiao @ Github
               { linkOut.bind }
             </a>
           </li>

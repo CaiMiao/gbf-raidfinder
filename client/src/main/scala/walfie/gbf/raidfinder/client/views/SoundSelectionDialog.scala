@@ -71,7 +71,7 @@ object SoundSelectionDialog {
     <ul class="mdl-list" style="padding: 0; margin: 0;">
       {
         // Using -1 because it doesn't match any sound ID. This is such a hack.
-        soundListItem(-1, "None", selectedSoundId).bind
+        soundListItem(-1, "静音", selectedSoundId).bind
       }
       {
         Constants(NotificationSounds.all: _*).map { sound =>

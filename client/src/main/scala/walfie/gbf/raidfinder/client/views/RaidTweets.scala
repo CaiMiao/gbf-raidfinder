@@ -31,8 +31,8 @@ object RaidTweets {
         {
           <div class="gbfrf-column__notification-banner mdl-shadow--4dp">
             <div class="gbfrf-column__notification-banner-container">
-              { notificationBannerItem("声音：开", "volume_up", Binding(column.notificationSound.bind.nonEmpty)).bind }
-              { notificationBannerItem("通知：开", "notifications", column.isSubscribed).bind }
+              { notificationBannerItem("声音 : 开", "volume_up", Binding(column.notificationSound.bind.nonEmpty)).bind }
+              { notificationBannerItem("通知 : 开", "notifications", column.isSubscribed).bind }
             </div>
           </div>
         }
