@@ -67,7 +67,7 @@ object SettingsMenu {
 
     // TODO: Don't hardcode this
     val githubBaseUrl = "https://github.com/walfie/gbf-raidfinder"
-    val forkGitBaseUrl = "https://github.com/CaiMiao/gbf-raidfinder/schinese"
+    val forkGitBaseUrl = "https://github.com/CaiMiao/gbf-raidfinder-schinese"
 
     def linkOut() = Binding(<i class="gbfrf-linkout material-icons">open_in_new</i>)
 
