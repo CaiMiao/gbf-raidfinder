@@ -246,6 +246,14 @@ html, body, .gbfrf-container {
   color: #fff;
   background-color: #444;
   border-bottom: none;
+  height: 80px;
+  background-position: 0 22%;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.gbfrf-follow__boss-box--with-image > span.mdl-list__item-primary-content {
+  width: 100%;
+  text-align: right;
 }
 
 .gbfrf-follow__boss-box-subtitle {
