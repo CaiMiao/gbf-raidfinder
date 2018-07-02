@@ -246,20 +246,21 @@ html, body, .gbfrf-container {
   color: #fff;
   background-color: #444;
   border-bottom: none;
+
   height: 80px;
   background-position: 0 22%;
-  text-shadow: 2px 2px 2px #000;
 }
 
 /* Trick to imaged boss names */
 .gbfrf-follow__boss-box--with-image > span.mdl-list__item-primary-content {
   width: 100%;
   text-align: right;
+  text-shadow: 2px 2px 2px #000;
 }
 
 /* Trick to imaged following boss names */
 .gbfrf-follow__boss-box--with-image > div:nth-last-of-type(2).mdl-layout-spacer {
-    width: 25px;
+    width: 8%;
 }
 
 .gbfrf-follow__boss-box-subtitle {

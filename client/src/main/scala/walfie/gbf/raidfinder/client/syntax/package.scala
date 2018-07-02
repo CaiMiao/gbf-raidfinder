@@ -29,7 +29,9 @@ package object syntax {
         case Some(imageUrl) =>
           val img = dom.document.createElement("img").asInstanceOf[HTMLImageElement]
           val color = s"rgba(0, 0, 0, $opacity)"
-          elem.style.backgroundImage = s"linear-gradient($color, $color), url('$imageUrl')"
+          val pbsRegex = """https:\/\/pbs\.twimg\.com\/media"""
+          val imageUrlRedir = new String(imageUrl.toString.replaceAll(pbsRegex, "/pbs-twimg"))
+          elem.style.backgroundImage = s"linear-gradient($color, $color), url('$imageUrlRedir')"
       }
 
       elem
