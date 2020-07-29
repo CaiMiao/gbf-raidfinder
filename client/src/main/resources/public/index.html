@@ -51,13 +51,13 @@ function getBaseUrl() {
   if (queryParams.baseUrl) return queryParams.baseUrl;
 
   var protocol = (l.protocol === 'https:') ? 'wss://' : 'ws://';
-  var remoteUrl = 'ws://gbf-raidfinder.aikats.us';
+  var remoteUrl = 'wss://granblue-raidfinder.herokuapp.com';
   return isLocalFile ? remoteUrl : (protocol + l.host);
 };
 
 [
-  'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'css/code.getmdl.io/1.2.0/material.indigo-pink.min.css',
+  'https://fonts.loli.net/icon?family=Material+Icons',
+  'https://cdn.bootcss.com/material-design-lite/1.2.0/material.indigo-pink.min.css',
   'css/dark.css',
   'css/base.css'
 ].forEach(loadCSS);
@@ -83,7 +83,7 @@ if (!isLocal) {
 }());
 </script>
 
-<script async defer src="css/code.getmdl.io/1.2.0/material.min.js"></script>
+<script async defer src="https://cdn.bootcss.com/material-design-lite/1.2.0/material.min.js"></script>
 
 </body>
 </html>

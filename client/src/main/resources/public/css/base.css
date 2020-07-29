@@ -251,6 +251,11 @@ html, body, .gbfrf-container {
   background-position: 0 22%;
 }
 
+/* Text shadow for following boss names on header */
+.gbfrf-column__header-row > .gbfrf-column__header {
+  text-shadow: 2px 2px 2px #000;
+}
+
 /* Trick to imaged boss names */
 .gbfrf-follow__boss-box--with-image > span.mdl-list__item-primary-content {
   width: 100%;

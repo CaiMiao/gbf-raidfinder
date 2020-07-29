@@ -260,7 +260,7 @@ class WebSocketRaidFinderClient(
     val body = Seq(
       s"@${tweet.screenName}: ${tweet.raidId}",
       tweet.text,
-      "\n(Click to copy raid ID)"
+      "\n(点击复制救援ID)"
     ).filter(_.nonEmpty).mkString("\n")
 
     val onClick = { event: dom.Event =>

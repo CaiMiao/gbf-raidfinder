@@ -45,7 +45,7 @@ object SettingsMenu {
             }.bind
           }
           {
-            settingsListItem("显示用户推特头像") {
+            settingsListItem("显示用户推特头像（国内无效）") {
               checkboxAction("gbfrf-setting__user-image", viewState.showUserImages, onChange)
             }.bind
           }
